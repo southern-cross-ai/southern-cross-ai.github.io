@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the interactive features of Southern Cross AI, a cutting-edge AI initiative.">
     <title>Southern Cross AI Interactive</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="text-container">Southern Cross AI</div>
-    <div class="gradient-bg">
-        <svg xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
-                    <feBlend in="SourceGraphic" in2="goo" />
-                </filter>
-            </defs>
-        </svg>
-        <div class="gradients-container">
-            <div class="g1"></div>
-            <div class="g2"></div>
-            <div class="g3"></div>
-            <div class="g4"></div>
-            <div class="g5"></div>
-            <div class="interactive"></div>
+    <header>
+        <div class="text-container" role="banner">Southern Cross AI</div>
+    </header>
+    <main>
+        <div class="gradient-bg">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" 
+                            values="1 0 0 0 0  
+                                    0 1 0 0 0  
+                                    0 0 1 0 0  
+                                    0 0 0 16 -7" result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                </defs>
+            </svg>
+            <div class="gradients-container">
+                <div class="g1"></div>
+                <div class="g2"></div>
+                <div class="g3"></div>
+                <div class="g4"></div>
+                <div class="g5"></div>
+                <div class="interactive" role="button" tabindex="0">
+                    <!-- Content for interactive element -->
+                </div>
+            </div>
         </div>
-    </div>
-    <script>
-        // Add the JavaScript here
-    </script>
+    </main>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
+
