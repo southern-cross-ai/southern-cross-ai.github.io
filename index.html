@@ -3,42 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the interactive features of Southern Cross AI, a cutting-edge AI initiative.">
-    <title>Southern Cross AI Interactive</title>
+    <title>Southern Cross AI</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="text-container" role="banner">Southern Cross AI</div>
-    </header>
-    <main>
-        <div class="gradient-bg">
-            <svg xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <filter id="goo">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
-                        <feColorMatrix in="blur" mode="matrix" 
-                            values="1 0 0 0 0  
-                                    0 1 0 0 0  
-                                    0 0 1 0 0  
-                                    0 0 0 16 -7" result="goo" />
-                        <feBlend in="SourceGraphic" in2="goo" />
-                    </filter>
-                </defs>
-            </svg>
-            <div class="gradients-container">
-                <div class="g1"></div>
-                <div class="g2"></div>
-                <div class="g3"></div>
-                <div class="g4"></div>
-                <div class="g5"></div>
-                <div class="interactive" role="button" tabindex="0">
-                    <!-- Content for interactive element -->
-                </div>
-            </div>
+
+    <!-- Navigation Menu -->
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <!-- Add other menu items here -->
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="text-container">
+        <h1>Southern Cross AI</h1>
+        <p class="subtitle">
+            An Open-Source Community Shaping Australia’s AI Future<br>
+            <em>Working Together to Build Joey, a Large Language Model Made in Australia.</em>
+        </p>
+
+        <!-- Buttons Below Subtitle -->
+        <div class="buttons-container">
+            <a href="https://huggingface.co/SouthernCrossAI" target="_blank" rel="noopener noreferrer" class="custom-button huggingface-button" aria-label="Explore Southern Cross AI on Hugging Face">
+                <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Explore Southern Cross AI on Hugging Face" class="icon">
+                Hugging Face
+            </a>
+            <a href="https://github.com/Southern-Cross-AI" target="_blank" rel="noopener noreferrer" class="custom-button github-button" aria-label="Visit our GitHub Repository">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Visit our GitHub Repository" class="icon">
+                GitHub
+            </a>
+            <a href="https://discord.gg/nvVkJShz6K" target="_blank" rel="noopener noreferrer" class="custom-button discord-button" aria-label="Join our Discord Community">
+                <img src="https://cdn-icons-png.flaticon.com/512/6422/6422197.png" alt="Join our Discord Community" class="icon">
+                Discord
+            </a>
         </div>
-    </main>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="gradient-bg">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+        <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript File -->
     <script src="js/main.js"></script>
 </body>
 </html>
-
