@@ -5,6 +5,75 @@ html, body {
   height: 100%;
 }
 
+/* Menu Content */
+.menu-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white for visibility */
+  backdrop-filter: blur(10px); /* Adds frosted glass effect */
+  color: white;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0; /* Increases height by adding vertical padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow for depth */
+}
+
+.menu-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-bar li {
+  margin: 0 20px; /* Adds more spacing between menu items */
+}
+
+.menu-bar a {
+  color: black; /* Keeps text readable */
+  text-decoration: none;
+  font-size: 25px; /* Increases font size for better readability */
+  line-height: 1.5; /* Adjusts line height for a balanced look */
+}
+
+.menu-bar a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+.text-container h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-container .subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+
+
+/* Background */
 .view {
   position: absolute;
   top: 0;
