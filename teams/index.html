@@ -1,30 +1,43 @@
 ---
 layout: default
 title: About
-class: about-page
+class: site-pages
 ---
 
 <!-- Background Effects -->
 
 <!-- Main Content -->
 <div class="glass-box text-container">
-    <h1>About Us</h1>
-    <p class="subtitle">
-        Southern Cross AI is an open-source community bringing together AI specialists, hobbyists, academics, and
-        enthusiasts across Australia. Our mission is to foster innovation, collaboration, and education in artificial
-        intelligence.
-    </p>
+    <h1>Our Teams</h1>
+    <h2>We are looking for passionate and talented students to join our teams. Each team will consist of 7 members who will contribute their skills to shape the future of AI. Explore the opportunities below and see how you can make an impact!</h2>
+    <div class="teams-container">
+        <!-- Team 1 -->
+        <div class="team">
+            <i class="fas fa-brain team-icon"></i>
+            <h2>JoeyLLM</h2>
+            <p>Are you skilled in natural language processing, machine learning, or data engineering? Join JoeyLLM to build Australia's next-generation language model and push the boundaries of AI innovation.</p>
+            <button onclick="window.location.href='/joeyllm';">Learn More</button>
+        </div>
 
-    <p class="subtitle">
-        Key initiatives include:
-    </p>
-    <ul class="subtitle">
-        <li>Developing Joey, a large language model crafted in Australia.</li>
-        <li>Engaging with businesses, governments, and researchers to shape AI's future.</li>
-        <li>Hosting monthly meetups to share knowledge and insights.</li>
-    </ul>
+        <!-- Team 2 -->
+        <div class="team">
+            <i class="fas fa-cogs team-icon"></i>
+            <h2>ModelWorks</h2>
+            <p>Do you excel in AI development, software engineering, or product design? ModelWorks is your chance to develop impactful real-world AI solutions that make a difference.</p>
+            <button onclick="window.location.href='/modelworks';">Learn More</button>
+        </div>
+
+        <!-- Team 3 -->
+        <div class="team">
+            <i class="fas fa-bullhorn team-icon"></i>
+            <h2>AmplifiAI</h2>
+            <p>Are you a <span style="font-size: larger;">creative</span> mind with skills in multimedia, marketing, or social media? AmplifiAI needs you to amplify AI outreach through innovative campaigns and content creation.</p>
+            <button onclick="window.location.href='/amplifiai';">Learn More</button>
+        </div>
+    </div>
 </div>
 
+<!-- Background Elements -->
 <div class="view">
     <div class="plane main">
         <div class="circle"></div>
@@ -35,3 +48,71 @@ class: about-page
         <div class="circle"></div>
     </div>
 </div>
+
+<!-- Add Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Styles -->
+<style>
+    .teams-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch; /* Ensures all boxes stretch to the tallest height */
+        margin-top: 20px;
+        gap: 20px; /* Added spacing between the boxes */
+    }
+
+    .team {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        width: 30%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; /* Center-aligns content including icons */
+    }
+
+    .team-icon {
+        font-size: 50px; /* Adjust size of the icon */
+        color: #007bff; /* Set icon color */
+        margin-bottom: 10px; /* Add space below the icon */
+    }
+
+    .team h2 {
+        margin-top: 0;
+    }
+
+    .team p {
+        margin: 10px 0;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .team button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 30px 50px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .team button:hover {
+        background-color: #0056b3;
+    }
+
+    .glass-box {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        padding: 20px;
+        backdrop-filter: blur(10px);
+    }
+
+    .text-container h1 {
+        text-align: center;
+    }
+</style>
